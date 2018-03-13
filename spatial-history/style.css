@@ -1,15 +1,34 @@
 /* This is a very simple CSS setup that shows the size of the relevant divs and -- important! -- sets the size of the map container */
 
+body {
+  background-color: #CECED9;
+  color: #2D313C;
+  font-family: "Gill Sans", sans-serif;;
+}
 /* add any styling for the central column here */
 div.container {
+}
+
+a:hover {
+  text-decoration: line-through;
+  color: #0d0d41;
+}
+
+.navbar-default {
+  background-color: #0d0d41;
 }
 
 div#mapcontainer {
   font-family:Arial, sans-serif;
   font-size:11px;
-  border:6px double #5E5C63;
+  border-radius: 10px;
+  border:2px double #0d0d41;
   width:66%;
   float:left;
+}
+
+hr#divider {
+  background-color: #0d0d41;
 }
 
 /* you can change the size of the map here if you want
@@ -24,19 +43,54 @@ div#map_canvas {
 /* this is the legend div. Can you make it into a right sidebar? you may
 have to add some extra css to the mapcontainer div */
 div#map_legend {
-    max-width:30%;
-    float:left;
+    height: 300px;
+    font-size: 11px;
+    background-color: #CECED9;
+    overflow-y: scroll;
+    padding-left: 10px;
+    float:right;
 }
 
 /* if you want, you can make the text in the legend less ugly by adding
 extra css classes */
-div#map_legend h1, div#map_legend h3 {
-
+div#map_legend h1{
+    font-size: 23px;
+    color: #FFFFFF;
 }
+
+div#map_legend h3 {
+  font-size: 15px;
+    color: #2fa8a8;
+}
+
+div#map_legend h3:hover {
+  cursor: pointer;
+  color:#0d0d41;
+}
+
+div#essay-content {
+  font-size: 14px;
+  position: absolute;
+  top: 45em;
+  max-width: 40%;
+  background-color: transparent;
+  padding: 15px 15px 15px 15px;
+  line-height: 28px;
+}
+
 
 // make it obvious that the legend text is clickable
 div.pointer {
-    cursor:pointer
+    cursor: crosshair;
+}
+
+div.pointer:nth-child(odd) {
+  background-color: #e6e6ec;
+  padding: 5px 5px 5px 5px;
+}
+
+div.pointer h3 {
+  color: #7ab7cd;
 }
 
 /*just for fun, we can style the buttons using classes
@@ -49,12 +103,15 @@ button.rounded {
   -moz-border-radius:5px;
   border-radius:5px;
   border: 1px black solid;
+  margin-bottom: 10px;
 }
+
 button#hide {
-  background:orange;
+  background: #a8bcf0;
 }
+
 button#show {
-  background:green;
+  background: #2fa8a8;
 }
 
 /* use these last three to style the text inside the
@@ -64,7 +121,7 @@ button#show {
 */
 
 div#map_canvas h1 {
-
+  color: #7ab7cd;
 }
 
 div.address  {
@@ -76,7 +133,7 @@ div.description {
 }
 
 div.gm-style-iw {
-    max-height: 75px;
+    max-height: 400px;
 }
 div.gm-style-iw img {
     max-width: 75% !important;
