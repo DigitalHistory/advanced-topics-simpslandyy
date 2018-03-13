@@ -1,39 +1,28 @@
-# This Map Should Deal with a Historical Topic You Care About
-
-Your first task will be to locate some real places.  You can get the precise locations at various services, e.g [latlong.net](http://www.latlong.net/).
-
-Then add those places to the marker array in [../js/maps-setup.js](../js/maps-setup.js) (see instructions there).
-
-replace this text and the text with your essay. But be sure not to eliminate the html elements that
-are contained inside this textarea, or [your map won't work at all!][1] [1](#one)
-<figure>
-![](https://upload.wikimedia.org/wikipedia/commons/a/ab/Lolcat_in_folder.jpg "this is the alt text")<figcaption>caption</figcaption>
-</figure>
-It makes sense to put an introductory paragraph here, above the map and buttons. To change the bootswatch thenme, change "united" to one of the other theme names listed at [strapdownjs.com](http://strapdownjs.com/).
-
-[1]: http://hello.com
-[^1]: This is my first footnote
-
-<a id="#one">1: </a> some text here
-
+# Expansion of Toronto Subway Line
 
 <div class="markers">
   <!-- these buttons hide/show all the markers  -->
   <!-- to hide/show blue or red markers instead, change my_markers below to blue_markers
        to red_markers.  If you have defined your own color (or other) arrays, use those instead -->
   <button onclick="toggleMarkers(my_markers, my_map)" class="rounded" id="hide">Toggle markers</button>
-  <button onclick="showMarkers(my_markers, my_map)" id="show"> show markers</button>
 </div>
   <div id="mapcontainer">
     <div id="map_canvas"></div>
   </div>
   <div id="map_legend"></div>
 </div>
+<div id="essay-content">
+<hr id="divider">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The City of Toronto subway lines opening and expansions are a reflection of the population growth that started in Canada in the 1950s and the suburbanization of Toronto that followed the growth.
 
-# Next Section
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Canada’s population fluctuated dramatically over the past century. The most notable time was in 1951, when the annual number of landed immigrants in Canada jumped from 73,912 to 194,391 ([Statistics Canada](https://www.statcan.gc.ca/pub/11-516-x/sectiona/A350-eng.csv)). These results also follow from the changes in the federal immigration laws discriminating against people of other countries. In 1950, the Government of Canada lifted the immigration restriction on citizens from enemy countries such as Germany and Italy ([Canadian Encyclopedia](http://www.thecanadianencyclopedia.ca/en/article/toronto/)). In the 1960’s, restrictions against visible minorities and citizens of third world countries began to shift. In tandem to the increasing immigration rate in the 1950s, the number of foreign-born Canadians was steadily increasing ([Toronto.ca](https://www.toronto.ca/explore-enjoy/history-art-culture/museums/virtual-exhibits/history-of-toronto/the-modern-metropolis-from-1951/)). Between 1951 and 1961, approximately 784,000 Canadians were born ([Statistics Canada - Megatrends](https://www.statcan.gc.ca/pub/11-630-x/11-630-x2016006-eng.htm)). The increase of population influenced the City of Toronto, which is now known to be the cornerstone of multiculturalism.
 
-The rest of your essay should go under the map, probably.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The City of Toronto experienced suburbanization, population growth and also an influx of automobiles in the early 1950’s. In the 1951 census of Toronto, 69 percent of the peoples were foreign-born Canadians and 27 percent were not ethnically British. After 1951, the diversity of the city began to shift and waves of immigration flowed into the city ([Toronto.ca](https://www.toronto.ca/explore-enjoy/history-art-culture/museums/virtual-exhibits/history-of-toronto/the-modern-metropolis-from-1951/)). In 1953, the Province of Ontario implemented a two-tiered civic structure separating Metropolitan Toronto from the City of Toronto itself. The Metropolitan consisted of rural jurisdictions such as Scarborough, North York, Etobicoke and York ([Toronto.ca](https://www.toronto.ca/explore-enjoy/history-art-culture/museums/virtual-exhibits/history-of-toronto/the-modern-metropolis-from-1951/)). These spatial changes reflect the type of development that was occurring in and out of Toronto, such as suburban housing and expanding business sector. These types of developments reflect the population growth of the city at the time.
 
-## in sections like this
-also _italics_ and __bold__ which can also be written *like this* or **like this**
-etc. Be sure to [make use of links](http://digital.hackinghistory.ca) -- that's one of the reasons we write on the Web, and I've asked you to use links for all yor footnotes/references as well.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suburbanization divided the rural areas from the urban areas, the business sector from the residential sector. Population growth and the introduction of automobiles introduced a type of traffic that the City of Toronto at the time was unfamiliar with. Commuting therefore became an important problem to continuously tackle since the 1950’s.
+The Toronto Transportation Commision, which is now known as Toronto Transit Commission, made significant strides to tackle the congestion within the city. They created bus routes, improved surface routes, trolleys and streetcars. However, the most notably change was the introduction of subway lines ([Toronto.ca](https://www.toronto.ca/explore-enjoy/history-art-culture/museums/virtual-exhibits/history-of-toronto/the-modern-metropolis-from-1951/)). The Yonge line was the first subway line that opened in 1954 and ran from Union to Eglinton ([Transit Toronto](https://transit.toronto.on.ca/subway/5100.shtml)).
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The introduction of the Yonge subway line immediately lifted the inner city traffic and replaced the Yonge streetcar line that was established in 1861 ([Transit Toronto](https://transit.toronto.on.ca/subway/5102.shtml)). The introduction of the Yonge subway line changed the dynamic of transportation in the city and had a positive effect on the city. It is evident that since that time the Yonge subway line expanded past Eglinton to where it is today to match the changing urban-rural dynamic of the city. Prior to the opening of the Yonge line, the post-war baby boom caused a demand for affordable housing. Suburban development therefore began in 1952 in Don Mills ([Toronto.ca](https://www.toronto.ca/explore-enjoy/history-art-culture/museums/virtual-exhibits/history-of-toronto/the-modern-metropolis-from-1951/)). Similarly to our current condominium revolution, suburban housing dominated the housing markets. This slow migration of inner city residents moving outward meant that there was a demand for transportation so that residents could commute to and from the inner city. The development of suburban housing in Don Mills and the migration of inner city residents is reflected in the expansion of the Yonge line from Eglinton to York Mills in 1973, and York Mills to Finch in 1974 ([Transit Toronto](https://transit.toronto.on.ca/subway/5100.shtml)).
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The University line was introduced in 1963 that runs from Union to St.George and the Bloor line was opened in 1966, which ran from Keele to Woodbine ([Transit Toronto](https://transit.toronto.on.ca/subway/5100.shtml)). Each one of these lines ran from the heart of the bustling downtown core where the majority of businesses were located to the outer residential areas of Toronto. However, none of these lines at the time accommodated for Metropolitan Toronto such as Scarborough and Etobicoke. After the second world war automobiles allowed for low-density developments away from major streetcar routes ([Toronto.ca](https://www.toronto.ca/explore-enjoy/history-art-culture/museums/virtual-exhibits/history-of-toronto/the-modern-metropolis-from-1951/)). Outer city residents invested in automobiles to commute to and from the city and this resulted in higher density traffic. This type of change prompted for extensions on the initial lines as follows: Spadina line from St. George to Wilson in 1978, the Bloor West line from Keele to Islington and the Danforth East line both in 1968 ([Transit Toronto](https://transit.toronto.on.ca/subway/5100.shtml)).
+</div>
