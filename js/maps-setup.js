@@ -9,7 +9,7 @@ var my_markers = []; // we use this in the main loop below to hold the markers
 // infowindow object -- its content and position change when you click on a
 // marker.  This is counterintuitive, but we need to live with it.
 var infowindow = new google.maps.InfoWindow({content: ""});
-var legendHTML = "<h1>Legend</h1>";
+var legendHTML = "<h2> Legend </h2>";
 
 // I'm complicating things a bit with this next set of variables, which will help us
 // to make multi-colored markers
@@ -63,18 +63,34 @@ function initializeMap() {
     var all_my_markers =
             [{position: new google.maps.LatLng(43.645221,-79.380570),
               map: my_map,
-              icon: marker_icons.orange, // this sets the image that represents the marker in the map to the one
+              icon: marker_icons.blue, // this sets the image that represents the marker in the map to the one
                              // located at the URL which is given by the variable blueURL, see above
               title: "Union Station",
-              window_content: '<h3> Union Station </h3>'+
+              window_content: '<h3> Union Station - Yonge </h3>'+
 									'<ul><li><b>Opened:</b> March 30, 1954</li>' +
-									'<li><b>Line:</b> Connected to the Yonge & University lines</li></ul>'
+									'<li><b>Line:</b> Connected to the Yonge & University lines. <br> Initially built for the Yonge line</li></ul>' +
+									'<p class="map_blurb">There area two sets of stations in this area, train station and subway station.' +
+									' The train station, which is now known as VIA Rail, ' +
+									'was opened and used prior to the subway station to connect out-of-city passengers to Toronto. '+
+									'<a href="https://transit.toronto.on.ca/subway/5100.shtml">(Transit Toronto)</a></p>'
              },
+						 {position: new google.maps.LatLng(43.668262,-79.399858),
+							map: my_map,
+							icon: marker_icons.blue, // this sets the image that represents the marker in the map
+							title: "St.George Station",
+							window_content: '<h3> St.George Station - University </h3>'+
+									'<ul><li><b>Opened:</b> February 28, 1963</li>' +
+									'<li><b>Line:</b> Connected to the University & Bloor lines. <br> Initially built for the University line </li></ul>' +
+									'<p class="map_blurb">The University subway line was an unexpected addition. Initially the plan was to build '+
+									'the Bloor-Danforth line, however the TTC realized that for commuters to continue their downtown travels ' +
+									'they would need to transfer trains. The University line was then added prior to the Bloor-Danforth line to address this. '+
+									'<a href="https://transit.toronto.on.ca/subway/5100.shtml">(Transit Toronto)</a></p>'
+						},
              {position: new google.maps.LatLng(43.704966,-79.398985),
               map: my_map,
               icon: marker_icons.orange, // this sets the image that represents the marker in the map
-              title: "Eglinton Station",
-              window_content: '<h3> Eglinton Station </h3>'+
+              title: "Eglinton Station ",
+              window_content: '<h3> Eglinton Station - Yonge </h3>'+
 									'<ul><li><b>Opened:</b> March 30, 1954</li>' +
 									'<li><b>Line:</b> Yonge</li></ul>'
             },
@@ -84,29 +100,25 @@ function initializeMap() {
              title: "Yonge Station",
              window_content: '<h3> Yonge Station </h3>'+
 								 '<ul><li><b>Opened:</b> March 30, 1954</li>' +
-								 '<li><b>Line:</b> Connected to the Yonge & Bloor-Danforth lines</li></ul>'
+								 '<li><b>Line:</b> Connected to the Yonge & Bloor-Danforth lines.<br> Initially built for the Yonge line.</li></ul>'
            },
-					 {position: new google.maps.LatLng(43.668262,-79.399858),
-						map: my_map,
-						icon: marker_icons.blue, // this sets the image that represents the marker in the map
-						title: "St.George Station",
-						window_content: '<h3> St.George Station </h3>'+
-								'<ul><li><b>Opened:</b> February 28, 1963</li>' +
-								'<li><b>Line:</b> University</li></ul>'
-					},
 				 {position: new google.maps.LatLng(43.655624,-79.459282),
 					map: my_map,
 					icon: marker_icons.green, // this sets the image that represents the marker in the map
-					title: "Keele Station",
-					window_content: '<h3> Keele Station </h3>'+
+					title: "Keele Station ",
+					window_content: '<h3> Keele Station - Bloor</h3>'+
 							'<ul><li><b>Opened:</b> February 25/26, 1966</li>' +
-							'<li><b>Line:</b> Bloor-Danforth</li></ul>'
+							'<li><b>Line:</b> Bloor-Danforth</li></ul>' +
+							'<p class="map_blurb">The Bloor-Danforth line was part of a controversal debate, The City of Toronto versus TTC.' +
+							' The City of Toronto backed by Mimico, Longbranch and New Toronto, which is now all known as Etobicoke, pushed for a subway line ' +
+							'along Queen. The TTC pushed for a subway line along Bloor, the TTC won the battle that deprived Etobicoke of direct subway connection along Queen.' +
+							'<a href="https://transit.toronto.on.ca/subway/5100.shtml">(Transit Toronto)</a></p>'
 				},
 				{position: new google.maps.LatLng(43.686408,-79.312638),
 				 map: my_map,
 				 icon: marker_icons.green, // this sets the image that represents the marker in the map
-				 title: "Woodbine Station",
-				 window_content: '<h3> Woodbine Station </h3>'+
+				 title: "Woodbine Station ",
+				 window_content: '<h3> Woodbine Station - Bloor </h3>'+
 						 '<ul><li><b>Opened:</b> February 25/26, 1966</li>' +
 						 '<li><b>Line:</b> Bloor-Danforth</li></ul>'
 			 }
@@ -123,15 +135,15 @@ function initializeMap() {
         // this next line is ugly, and you should change it to be prettier.
         // be careful not to introduce syntax errors though.
       legendHTML +=
-        "<div class=\"pointer\" onclick=\"locateMarker(my_markers[" + j + "])\"> " +
-          marker.window_content + "</div>";
-        marker.info = new google.maps.InfoWindow({content: marker.window_content});
+        "<div class=\"pointer\" onclick=\"locateMarker(my_markers[" + j + "])\"> <h4>"+
+				"<span> <img src=\""+ marker.icon + "\" /> </span>"  + marker.title +  "</h4></div>";
+        marker.info = new google.maps.InfoWindow({content: marker.window_content, maxWidth:'300px'});
         var listener = google.maps.event.addListener(marker, 'click', function() {
             // if you want to allow multiple info windows, uncomment the next line
             // and comment out the two lines that follow it
-            this.info.open(this.map, this);
-          //  infowindow.setContent (this.window_content);
-          //  infowindow.open(my_map, this);
+            // this.info.open(this.map, this);
+           infowindow.setContent (this.window_content);
+           infowindow.open(my_map, this);
         });
         my_markers.push({marker:marker, listener:listener});
         // if (all_my_markers[j].icon == blueURL ) {

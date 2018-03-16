@@ -43,27 +43,27 @@ div#map_canvas {
 /* this is the legend div. Can you make it into a right sidebar? you may
 have to add some extra css to the mapcontainer div */
 div#map_legend {
-    height: 300px;
     font-size: 11px;
-    background-color: #CECED9;
-    overflow-y: scroll;
     padding-left: 10px;
-    float:right;
+    position: absolute;
+    left: 61%;
+    min-width: 20%
 }
 
 /* if you want, you can make the text in the legend less ugly by adding
 extra css classes */
-div#map_legend h1{
-    font-size: 23px;
-    color: #FFFFFF;
+div#map_legend h2{
+    font-size: 20px;
+    color: #0d0d41;
+    text-align: center;
 }
 
-div#map_legend h3 {
-  font-size: 15px;
-    color: #2fa8a8;
+div#map_legend h4 {
+  font-size: 14px;
+  color: #2fa8a8;
 }
 
-div#map_legend h3:hover {
+div#map_legend h4:hover {
   cursor: pointer;
   color:#0d0d41;
 }
@@ -72,16 +72,20 @@ div#essay-content {
   font-size: 14px;
   position: absolute;
   top: 45em;
-  max-width: 40%;
+  clear: left;
+  max-width: 50%;
   background-color: transparent;
   padding: 15px 15px 15px 15px;
   line-height: 28px;
 }
 
-
+p.map_blurb {
+  max-width: 300px;
+}
 // make it obvious that the legend text is clickable
 div.pointer {
     cursor: crosshair;
+    margin: 5px 5px 5px 5px;
 }
 
 div.pointer:nth-child(odd) {
