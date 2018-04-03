@@ -1,33 +1,30 @@
-# Your Title should go in the appropriate place in `index.html`, not here! Title is itself set only in the `<head>` element
-
-## Use headings only if you want to have subsections in your essay
-
 <div class="sidepanel">
               <!-- This is the div where all the popcorn action will hapen -->
               <div id="popcorn-container">
               </div>
             </div>
 
+<div class="essay-content">
+Nichelle Nichols encounter with Dr. Martin Luther King Jr reveals the importance of racial representation and the influence it carried to bring forth social change in the mid 1960’s. Nichelle Nichols was creating a space and painting a new image of what it means to be black in America through her role as Nyota Uhura in Star Trek. She was enforcing change at a time where there was resistance to change through entertainment.
+
+Star Trek, created by Gene Roddenberry, is a popular science fiction television series that debuted in the mid 1960’s. Star Trek brought together fans of all different races but most notably it challenged the vision of being black in America. Nichelle Nichols played Lieutenant Nyota Uhura during the course of the original series from 1966 to 1969 [^first]. The show imagined a distance time and world where race was no longer a barrier. Its futuristic setting illustrated the kind of world that America was struggling to achieve.
+
+Although slavery was abolished after the Civil War in America, tensions between races was far from resolved. Jim Crow laws were established in the late 19th century and immobilized African Americans from sharing public spaces, such as restrooms, libraries, and educational institutions. The laws revoked voting rights from blacks and deemed interracial marriage illegal. Discrimination, prejudice, and violence against African Americans became an unfortunate norm and the Civil Rights Movement in the 1950s and 1960’s marked the road to end inequality and see forth a social change [^second].
+
+Nichelle Nichols talks about the moment in her Star Trek career where she wanted to quit and return to her “first-love” of musical theater. Nichols was completely unaware of how influential and powerful her role was at the time. Her perspective about her role as Nyota Uhura and her life as an actor changed by one simple encounter from a Star Trek fan. “I turn and instead of a fan there's this face the world knows with this beautiful smile on it. And I remember thinking, whoever that fan is, is gonna have to wait because Dr. King, Dr. Martin Luther King -my leader- is mo- walking towards me not 10 feet away with a beautiful smile on his face. And then this man says, 'Yes Ms. Nichols I am that fan. I am your best fan, your greatest fan.'” <a href=javascript:seek(13) onclick="javascript:seek(13)"> (13 seconds) </a> Dr. Martin Luther King Jr. was the face of the Civil Rights Movement. He established a following that not only consisted of African Americans but of all races [^third].
+“For the first time on television we will be seen as we should be seen everyday.”<a href=javascript:seek(197) onclick="javascript:seek(197)"> (3:17 seconds) </a> Nichols explains what Dr.King Jr told her when she explained to him that she was planning to quit. The representation as an African American woman on a television series during this time was bigger than her. Nichols continues to paraphrase Dr. King Jr, “As intelligent, quality, beautiful people who can sing, dance and -but can go to into space. Who can lawyers, who can be teachers, who can profes- who are in this day, and yet you don’t see it until now.”<a href=javascript:seek(205) onclick="javascript:seek(205)"> (3:25 seconds) </a> The statement reveals the kind of representation reflecting the African Americans. During the Civil Rights Movement, African American people were labeled as deviants, lawless, ruthless, ugly, unintelligent. The media pushed an agenda to show white beauty, white intelligence, white achievements; American television at the time had little to no African American influence. Young African American children were growing up in a time where they had no cartoons, no superheros, no roles that looked and represented them. Nichols role in Star Trek was an incredible step forward to destroy the stereotypes white media had falsely created of the African American community. It also created a space where people of all races could share and conversate and enjoy entertainment.
 
 
-Add your content here, including _markup_ of **various kinds**. Now you can just write! But you should be aware of a couple of advanced features of markdown:
-- you can embed HTML directly n a markdown file. This is great if you want to add complex attributes like **classes**, e.g. to your `img` tags so that they display properly.
-  - another use of embedded HTML is for funky javascript function links. I've written a simple function that will seek to a particular time code in seconds.  You can call it like this: `<a href="javascript:seek(75)">seek to 1:15</a>`, but `[seek to 1:15](javascript:seek(75))` won't render properly, so you have to type the whole linke in, as seen here: <a href="#" onclick="javascript:seek(75)"> seek to 1:15</a>.
-  - also, Remarkable supports pandoc-style footnotes, which can be helpful sometimes. Here are some examples of footnotes at work:
+“Your role is not a black role and it’s not a female role, he can fill it with anything including ... an alien”<a href=javascript:seek(264) onclick="javascript:seek(264)"> (4:24 seconds) </a> Nichols role was replaceable anyone could fill the slot, including a tall, white, blonde woman. African American people were seen as replaceable and were thought to not play an important role in American society. Nichols had role but she needed to make it an important role, an irreplaceable role. Dr. King Jr wanted Nichols to understand that the character of Nyota Uruha should be engraved in American society as a black, strong, female, an irreplaceable, necessary character that could only be filled by a black woman and Nichols needed to stay long enough in Star Trek to push that vision.
 
-    Footnote 1 link[^first].
-
-    Footnote 2 link[^second].
-
-    Inline footnote^[Text of inline footnote] definition.
-
-    Duplicated footnote reference[^second].
-
-you can learn more about remarkable on [its github page](https://github.com/jonschlinkert/remarkable), and get a fuller sense of the syntax [in the online demo](https://jonschlinkert.github.io/remarkable/demo/)
+For example, in recent events the role of James Bond to be played by Idris Elba received backlash. The reception was that James Bond is suppose to be a white man and Idris Elba is a black man. James Bond is no longer an abstract entity that can be instantiated in any form, the character James Bond is connected to a white man. Dr. King Jr wanted to emphasize that at this time Nichols was shaping and changing African American representation and this change needed to be deeply engraved into society for years to come. Young children should be able to see a person that looks just like them and realize they too can be more than the stereotype that has been systematically enforced.
 
 
-[^first]: Footnote **can have markup**
+[^first]: “Star Trek (TV Series 1966–1969).” IMDb, [IMDb.com](www.imdb.com/title/tt0060028/?ref_=nm_knf_i1)
 
-    and multiple paragraphs.
 
-[^second]: Footnote text.
+[^second]: History.com Staff. “Civil Rights Movement.” [History.com](www.history.com/topics/black-history/civil-rights-movement), A&E Television Networks, 2009
+
+
+[^third]: “Dr. Martin Luther King Jr.” [HistoryNet](www.historynet.com/martin-luther-king-jr)
+</div>
