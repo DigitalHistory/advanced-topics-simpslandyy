@@ -53,17 +53,16 @@ div#essay-content {
    border: 1px solid #0d0d41;
    width: 700px;
    height: 400px;
-   overflow: hidden;
+   overflow-y: scroll;
    background-color: #ecf0f1 ;
    padding: 10px;
+   font-size: 14px;
 }
+
+
 
 /* override inline css of popcorn */
-#popcorn-container > a:nth-child(1), a:nth-child(4), a:nth-child(6) {
-  width: 100%;
+img {
+  width: 74%;
   height: 100%;
 }
-
- #popcorn-container > a:nth-child(2) {
-   height: 95%;
- }

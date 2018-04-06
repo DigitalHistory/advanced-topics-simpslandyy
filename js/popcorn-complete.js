@@ -10831,7 +10831,7 @@ document.addEventListener( "click", function( event ) {
        * options variable
        */
       start: function( event, options ) {
-        options.anchor.style.display = "flex";
+        options.anchor.style.display = "-webkit-box";
         if ( options.trackedContainer ) {
           options.trackedContainer.start();
         }

@@ -11,29 +11,38 @@ var loadPopcorn = function () {
   var pop = Popcorn("#media", {pauseOnLinkClicked: true});
 
 
-  pop.image({
+  pop.wikipedia({
     start: 0,
-    end: 10,
-    src:"https://i1.wp.com/blackdoctor.org/wp-content/uploads/2015/01/nichelle-nichols-then-and-now-1.jpg?fit=960%2C720&ssl=1",
-    text: "Nichelle Nichols - Lt. Nyota Uhura",
+    end: 20,
+    src:"https://en.wikipedia.org/wiki/Nichelle_Nichols",
+    title: "Nichelle Nichols - Lt. Nyota Uhura",
     target: "popcorn-container"
   });
 
   pop.image({
-    start: 10,
+    start: 0,
+    end: 20,
+    src: "https://i1.wp.com/nerdvanamedia.com/wp-content/uploads/2012/12/12119_10151290282718567_819338698_n.jpg?resize=500%2C400",
+    target: "popcorn-container"
+  })
+
+  pop.image({
+    id: "img-id",
+    start: 20,
     end: 25,
     src:"https://cdn.journaldugeek.com/content/uploads/2016/09/TOS.jpg",
     target: "popcorn-container"
   });
 
   pop.footnote({
-    start: 11,
+    start: 20,
     end: 25,
     text: "Star Trek is a popular science fiction TV show, it's original series ran from 1966-1969",
     target: "popcorn-container"
   });
 
   pop.image({
+    id: "img-id",
     start: 25,
     end: 35,
     src: "https://cdn.history.com/sites/2/2014/01/king-nobel-peace-prize-P.jpeg",
@@ -53,6 +62,7 @@ var loadPopcorn = function () {
   });
 
   pop.image({
+    id: "img-id",
     start: 51,
     end: 57,
     src: "http://s-usih.org/wp-content/uploads/2013/08/MLK.jpg",
@@ -60,6 +70,7 @@ var loadPopcorn = function () {
   });
 
   pop.image({
+    id: "img-id",
     start: 57,
     end: 81,
     src: "http://surfcollectivenyc.com/wp-content/uploads/2014/01/KingFamily-800.jpg",
@@ -83,12 +94,31 @@ var loadPopcorn = function () {
   });
 
   pop.image({
+    id: "img-id",
     start: 181,
     end: 185,
-    text: "Gene Roddenberry - Creator of Star Trek",
     src: "https://tse1.mm.bing.net/th?id=OIP.gpil1DT6RzQcjhqGxN1nMgHaED&pid=15.1&P=0&w=315&h=173",
     target: "popcorn-container"
   });
+
+  pop.wikipedia({
+    start: 181,
+    end: 185,
+    text: "Gene Roddenberry - Creator of Start Trek",
+    src: "https://en.wikipedia.org/wiki/Gene_Roddenberry",
+    target: "popcorn-container"
+  })
+
+  pop.footnote({
+    start: 185,
+    end: 200,
+    text: "'Star Trek' in the 1960s: Liberal-Humanism and the Production of Race, is a journal article written by Daniel Bernardi (see footnote 5). " +
+    "Bernardi critiques Star Treks' liberal-humanist project and the interpretation of race in America. He argues that the creator Gene Roddenberry and the NBC, " +
+    "the network that aired the series, engages in a liberal paradox that is mindful of the movements in the 1960s. Each decision, each written piece of work for the series, each " +
+    " direction the franchise took was to raise a political or social awareness to its audience. Gene Roddenberry 'achievenment' was bringing this agenda to networking television. " +
+    " Nichelle Nichols played a role in this agenda. ",
+    target: "popcorn-container"
+  })
 
   pop.footnote({
     start: 200,
@@ -103,6 +133,7 @@ var loadPopcorn = function () {
   });
 
   pop.image({
+    id: "img-id",
     start: 230,
     end: 240,
     src: "https://cdn.cnn.com/cnnnext/dam/assets/140408125623-restricted-20-civil-rights-horizontal-large-gallery.jpg",
@@ -110,25 +141,45 @@ var loadPopcorn = function () {
   });
 
   pop.image({
+    id: "img-id",
     start: 240,
     end: 245,
     src: "https://i.pinimg.com/originals/c9/8d/aa/c98daa9ce971398c9f531fab3173bd01.jpg",
     target: "popcorn-container"
   });
 
-  pop.image({
-    start:245,
-    end: 250,
-    src: "https://i.pinimg.com/736x/7c/27/06/7c2706571a734a21496af27c9621464d--american-children-young-children.jpg",
-    target: "popcorn-container"
-  });
+pop.footnote({
+  start: 245,
+  end: 255,
+  text: "Daniel Bernardi talks about the representation of minority on network television in the 1960s. " +
+  " Bernardi states that the tone of network television was governed by a 'policy of exclusion and segregation.' (footnote 5, page 212)" +
+  " He argues that the American public was sensitive to race relations because of the flow of civil war and anti-war demonstrations during " +
+  " the time. Decision-makers such as Gene Roddenberry and NBC " +
+  " consciously drew on domestic and international affairs to sell the series to the public (213).",
+  target: "popcorn-container"
+});
 
-  pop.image({
-    start: 250,
-    end: 800,
-    src: "https://alyssawaughdotcom1.files.wordpress.com/2015/03/tumblr_inline_mqccb6dbja1qz4rgp.jpg",
-    target: "popcorn-container"
-  });
+pop.footnote({
+  start: 255,
+  end: 800,
+  text: "Nichelle Nichols role was a necessary one, to play into the liberal-humanist agenda that pushed racial-equality." +
+  " Nichols needed to play an equal role to the white man by being the forefront of African American representation " +
+  "and creating a space where races can stand in equality with each other. " +
+  " Nichols and her colleagues were in a franchise that attracted a diverse fanbase and as Henry Jenkins would argue a franchise that influenced " +
+  "peoples to commit to foreign themes of feminism, multiculturalism and gay rights (see footnote 1). " +
+  "Star Trek created a philosophy of its own that had the power to tackle social, political and international affairs.",
+  target: "popcorn-container"
+})
+
+pop.image({
+  id: "img-id",
+  start: 260,
+  end: 800,
+  src: "https://i1.wp.com/blackdoctor.org/wp-content/uploads/2015/01/nichelle-nichols-then-and-now-1.jpg?fit=960%2C720&ssl=1",
+  target: "popcorn-container"
+});
+
+
 
   // Change the above events to your satisfaction, and then add your own events here, before
   // the final brackets.
